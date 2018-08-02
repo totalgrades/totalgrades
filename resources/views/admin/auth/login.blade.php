@@ -19,7 +19,7 @@
                    </div>
                     
                 </div>
-                <div class="col-md-9 col-xs-12" style="padding-left:1px; border-left: 1px solid #ccc;">
+                <div class="col-md-9 col-xs-12" style="border-left: 1px solid #ccc;">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/admin_login') }}">
                         {{ csrf_field() }}
 

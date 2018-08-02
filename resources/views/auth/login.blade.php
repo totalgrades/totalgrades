@@ -18,7 +18,7 @@
                    </div>
                     
                 </div>
-                <div class="col-md-9" style="padding-left:1px; border-left: 1px solid #ccc;">
+                <div class="col-md-9" style="border-left: 1px solid #ccc;">
                     <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
                         {{ csrf_field() }}
 
