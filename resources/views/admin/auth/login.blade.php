@@ -13,9 +13,9 @@
                 <div class="col-md-3 col-xs-12" >
                     <div class="logo text-center">
                     <a href="https://socidy.com/" class="simple-text">
-                        <img src="{{asset('/assets/img/logo/logo.jpg')}}" style="width: 130px; height: 130px; border-radius: 50%; margin-left: 20px; ">
+                        <img src="{{asset('/assets/img/logo/logo.jpg')}}" style="width: 130px; height: 130px; border-radius: 50%; margin-left: 1%; ">
                     </a>
-                    <div class="text-center" style="color: #3097d1;"> <strong>An Online Gradebook Project for Primary & Secondary Schools</strong> </div>
+                    <div class="text-center" style="color: #3097d1;"> <strong>An Online Gradebook Project<br> for Primary & Secondary Schools</strong> </div>
                    </div>
                     
                 </div>

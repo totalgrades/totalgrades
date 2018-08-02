@@ -50,6 +50,7 @@
             'admin.superadmin.schoolsetup.staffers.editstaffer',
             'admin.superadmin.schoolsetup.fees.showfees',
             'admin.superadmin.schoolsetup.fees.addfee',
+            'admin.superadmin.schoolsetup.gradebookActivities.activities',
 
             ], 
             

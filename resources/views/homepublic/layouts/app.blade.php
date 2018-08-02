@@ -170,7 +170,10 @@
 														<a href="{{url('/features')}}">Core Features</a>
 													</li>
 													<li class="">
-														<a href="{{url('/videos')}}">Demo Videos</a>
+														<a href="{{url('/videos')}}">Tutorial Videos </a>
+													</li>
+													<li class="">
+														<a href="{{url('/videos')}}">Register </a>
 													</li>
 												
 													<li class="dropdown">

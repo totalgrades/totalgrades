@@ -159,6 +159,15 @@
                         <b class="arrow"></b>
                     </li>
 
+                    <li {{{ (Request::is('schoolsetup/gradebookActivities/activities') ? 'class=active' : '') }}}>
+                        <a href="{{url('/schoolsetup/gradebookActivities/activities')}}">
+                            <i class="menu-icon fa fa-pie-chart"></i>
+                            <span class="menu-text"> Gradebook Activities</span>
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+
                     <li>
                         <a href="#{{ route('logout') }}"
                             onclick="event.preventDefault();

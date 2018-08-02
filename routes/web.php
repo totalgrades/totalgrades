@@ -395,7 +395,9 @@ Route::group(['middleware' => 'admin_auth'], function(){
         //Login Activities
         Route::get('/schoolsetup/logs/adminsloginactivities', 'AdminAuth\LoginActivity\AdminAuthActivityController@adminAuthActivities');
 
-
+        //Gradebook  Activities Setup
+        Route::get('/schoolsetup/gradebookActivities/activities', 'AdminAuth\GradebookActivities\CrudeController@activities');
+        Route::get('/schoolsetup/gradebookActivities/addActivity', 'AdminAuth\GradebookActivities\CrudeController@addActivity');
 
         
 
