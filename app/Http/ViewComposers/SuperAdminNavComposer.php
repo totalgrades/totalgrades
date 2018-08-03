@@ -44,7 +44,7 @@ Class SuperAdminNavComposer {
         //get all terms
         $terms = Term::get();
 
-        $current_term = Term::where([['start_date', '<=', $today], ['show_until', '>=', $today]])->first();
+        $current_term = Term::where('start_date', '<=', $today)->where('show_until', '>=', $today)->first();
 
         $admin_users = Admin::get();
             
@@ -76,10 +76,10 @@ Class SuperAdminNavComposer {
 
         //$current_unregistered_groups = Group::whereNotIn('id', $current_registered_groups)->select('name')->get();
 
-              
+            
         $grade_activities = GradeActivity::get();
 
-        //dd($group_join);
+        //dd($current_term);
 
         //put variables in views
         $view

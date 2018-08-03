@@ -33,7 +33,6 @@ class CoursesController extends Controller
         
         $term_courses = Course::where('term_id', '=', $term->id)->get();
 
-       
 
        return view('admin.showadmincourses', compact('schoolyear', 'term','term_courses'));
     }

@@ -39,7 +39,7 @@
                                 <tr>
                                     <td>{{ $key+1 }}</td>
                                     <td>{{ $grade_activity->activity_name }}</td>
-                                    <td>{{ $grade_activity->max_point }}</td>
+                                    <td>{{ $grade_activity->max_point }} <span>&#37;</span></td>
                                     <td><strong><a href="{{asset('/schoolsetup/gradebookActivities/editActivity/'.$grade_activity->id) }}"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></strong>
                                     </td>
                                     <td><strong><a href="{{asset('/schoolsetup/gradebookActivities/deleteActivity/'.$grade_activity->id) }}" onclick="return confirm('Are you sure you want to Delete this record?')"><i class="danger fa fa-trash-o fa-2x" aria-hidden="true" style="color:red"></i></a></strong>
@@ -50,7 +50,11 @@
                                 
                             </tbody>
                         </table>
-
+                        @if($grade_activities->where('school_year_id', $current_school_year->id)->sum('max_point') < 100 )
+                            <button type="button" class="btn btn-danger"><strong>Total Points: {{ $grade_activities->where('school_year_id', $current_school_year->id)->sum('max_point') }} <span>&#37;</span></strong> <mark>must be equal to 100 <span>&#37;</span></mark></button>
+                        @elseif($grade_activities->where('school_year_id', $current_school_year->id)->sum('max_point') == 100)
+                            <button type="button" class="btn btn-success"><strong>Total Points: {{ $grade_activities->where('school_year_id', $current_school_year->id)->sum('max_point') }} <span>&#37;</span></strong></button>
+                        @endif
                     </div>
                 </div>
             </div>

@@ -36,7 +36,7 @@ class YearTwoTermsTableSeeder extends Seeder
                     'term'=>'3rd Term',
                     'start_date'=>Carbon::create('2018', '04', '16'),
                     'end_date'=>Carbon::create('2018', '07', '20'),
-                    'show_until'=>Carbon::create('2028', '01', '01')
+                    'show_until'=>Carbon::create('2018', '09', '10')
                   ),
 
              

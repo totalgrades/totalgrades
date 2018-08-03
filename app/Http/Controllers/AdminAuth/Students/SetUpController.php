@@ -217,9 +217,10 @@ class SetUpController extends Controller
             $today = Carbon::today();
             
             //get current school year
-            $current_school_year = School_year::where('start_date', '<=', $today)->where('end_date', '>=', $today)->first();
+            $current_school_year = School_year::where('start_date', '<=', $today)->where('show_until', '>=', $today)->first();
 
-            $current_term = Term::where([['start_date', '<=', $today], ['end_date', '>=', $today]])->first();
+            $current_term = Term::where([['start_date', '<=', $today], ['show_until', '>=', $today]])->first();
+
             
             if($request->hasFile('import_file')){
                 $path = $request->file('import_file')->getRealPath();

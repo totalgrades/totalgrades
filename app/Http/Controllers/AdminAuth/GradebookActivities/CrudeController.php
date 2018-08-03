@@ -33,7 +33,7 @@ class CrudeController extends Controller
     	$this->validate(request(), [
        
             'activity_name' => 'required',
-            'max_point'=> 'required|numeric|min:0',
+            'max_point'=> 'required|numeric|max:100|min:0',
             
     		]);
 
@@ -70,7 +70,7 @@ class CrudeController extends Controller
          $this->validate(request(), [
        
             'activity_name' => 'required',
-            'max_point'=> 'required|numeric|min:0',
+            'max_point'=> 'required|numeric|max:100|min:0',
             
     		]);
 
