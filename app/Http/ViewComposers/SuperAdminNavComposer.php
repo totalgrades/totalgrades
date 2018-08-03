@@ -23,6 +23,7 @@ use App\StafferRegistration;
 use App\StudentRegistration;
 use PDF;
 use App\Feetype;
+use App\GradeActivity;
 
 Class SuperAdminNavComposer {	
 	
@@ -76,7 +77,7 @@ Class SuperAdminNavComposer {
         //$current_unregistered_groups = Group::whereNotIn('id', $current_registered_groups)->select('name')->get();
 
               
-
+        $grade_activities = GradeActivity::get();
 
         //dd($group_join);
 
@@ -95,7 +96,8 @@ Class SuperAdminNavComposer {
         ->with('feetypes', $feetypes)
         ->with('students', $students)
         ->with('current_staffers_registrations', $current_staffers_registrations)
-        ->with('current_students_registrations', $current_students_registrations);   
+        ->with('current_students_registrations', $current_students_registrations)
+        ->with('grade_activities', $grade_activities);    
     }
 }
 

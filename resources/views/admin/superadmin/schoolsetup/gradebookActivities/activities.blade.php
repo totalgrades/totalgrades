@@ -11,8 +11,7 @@
     </div><!-- /.page-header -->
     <div class="row">
     <div class="col-md-6 col-sm-6">
-
-        <button type="button" class="btn btn-primary">Add New Activity</button>
+        <a class="btn btn-primary" href="{{asset('/schoolsetup/gradebookActivities/addActivity') }}" role="button">Add New Activity</a>
     </div>
 </div>
     <div class="row">
@@ -27,23 +26,23 @@
 
                        <table class="table table-striped table-bordered">
                             <thead>
-                                <th>#</th>
+                                <th>ID #</th>
                                 <th>Activity Name</th>
-                                <th>Max Point Allowed</th>
+                                <th>Max Points Allowed(%)</th>
                                 <th>Edit</th>
                                 <th>Delete</th>
 
                             </thead>
                             <tbody>
-                                @foreach ($terms as $term)
+                                @foreach ($grade_activities as $key => $grade_activity)
 
                                 <tr>
-                                    <td>{{ $term->term }}</td>
-                                    <td>{{ $term->start_date->toFormattedDateString() }}</td>
-                                    <td>{{ $term->end_date->toFormattedDateString() }}</td>
-                                    <td><strong><a href="{{asset('/schoolsetup/editterm/'.$term->id) }}"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></strong>
+                                    <td>{{ $key+1 }}</td>
+                                    <td>{{ $grade_activity->activity_name }}</td>
+                                    <td>{{ $grade_activity->max_point }}</td>
+                                    <td><strong><a href="{{asset('/schoolsetup/gradebookActivities/editActivity/'.$grade_activity->id) }}"><i class="fa fa-pencil-square-o fa-2x" aria-hidden="true"></i></a></strong>
                                     </td>
-                                    <td><strong><a href="{{asset('/schoolsetup/posttermdelete/'.$term->id) }}" onclick="return confirm('Are you sure you want to Delete this record?')"><i class="danger fa fa-trash-o fa-2x" aria-hidden="true" style="color:red"></i></a></strong>
+                                    <td><strong><a href="{{asset('/schoolsetup/gradebookActivities/deleteActivity/'.$grade_activity->id) }}" onclick="return confirm('Are you sure you want to Delete this record?')"><i class="danger fa fa-trash-o fa-2x" aria-hidden="true" style="color:red"></i></a></strong>
                                     </td>
                                    
                                 </tr>

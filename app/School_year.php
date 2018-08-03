@@ -24,5 +24,10 @@ class School_year extends Model
     {
         return $this->hasMany('App\StudentRegistration');
     }
+
+    public function grade_activities()
+    {
+        return $this->hasMany('App\GradeActivity');
+    }
     
 }

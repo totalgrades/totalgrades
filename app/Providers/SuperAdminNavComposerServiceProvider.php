@@ -51,6 +51,8 @@
             'admin.superadmin.schoolsetup.fees.showfees',
             'admin.superadmin.schoolsetup.fees.addfee',
             'admin.superadmin.schoolsetup.gradebookActivities.activities',
+            'admin.superadmin.schoolsetup.gradebookActivities.addActivity',
+            'admin.superadmin.schoolsetup.gradebookActivities.editActivity',
 
             ], 
             
