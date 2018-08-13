@@ -33,7 +33,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600">TotalGrades - For Primary and Secondary Schools.
+									data-endspeed="600">TotalGrades is a Free Online Gradebook. 
 								</div>
 
 								<!-- LAYER NR. 2 -->
@@ -43,7 +43,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600">An easy to use yet very powerful online platform for managing and presenting students’ grades and attendance records elegantly. <br>It is designed with students and their parents in mind.
+									data-endspeed="600">Totalgrades is a free online gradebook for primary and secondary schools. <br>To start using totalgrades, all you need to to is click on "Register Now" below and your school portal will be set up.
 								</div>
 
 								<!-- LAYER NR. 3 -->
@@ -53,7 +53,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600"><a href=" {{url('/home')}} " class="btn btn-primary btn-lg"> <i class="fa fa-users pl-10"></i> Students - Login </a> <a href=" {{url('/admin_home')}} " class="btn btn-danger btn-lg"><i class="fa fa-user-plus pl-10"></i> Teachers - Login </a>
+									data-endspeed="600"><a href=" {{ url('/contact') }} " class="btn btn-success btn-lg">Register Now <i class="fa fa-edit pl-10"></i></a>
 								</div>
 
 								</li>
@@ -81,7 +81,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600">TotalGrades - For Smart Schools.
+									data-endspeed="600">TotalGrades is For Primary and Secondary Schools.
 								</div>
 
 								<!-- LAYER NR. 2 -->
@@ -91,7 +91,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600">If you would like a live in-person or online demostration of the total grades platform, <br>please contact us and we will have a demo arranged as soon as possible.
+									data-endspeed="600">An easy to use yet very powerful online platform for managing and presenting students’ grades and attendance records elegantly. <br>It is designed with students and their parents in mind.
 								</div>
 
 								<!-- LAYER NR. 3 -->
@@ -101,7 +101,7 @@
 									data-speed="600"
 									data-start="0"
 									data-end="10000"
-									data-endspeed="600"><a href=" {{ url('/contact') }} " class="btn btn-default btn-lg">Contact Us <i class="fa fa-angle-double-right pl-10"></i></a>
+									data-endspeed="600"><a href=" {{url('/home')}} " class="btn btn-primary btn-lg"> <i class="fa fa-users pl-10"></i> Students - Login </a> <a href=" {{url('/admin_home')}} " class="btn btn-danger btn-lg"><i class="fa fa-user-plus pl-10"></i> Teachers - Login </a>
 								</div>
 
 								</li>

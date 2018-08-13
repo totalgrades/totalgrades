@@ -9,7 +9,7 @@
 						<div class="row">
 							<div class="col-md-6">
 								<div class="footer-content">
-									<div class="logo-footer"><img id="logo-footer" src="{{asset('assets-homepublic/images/logo_totalgrades.png') }}" alt=""></div>
+									<div class="logo-footer"><img id="logo-footer" src="{{asset('assets-homepublic/images/logo_footer_totalgrades.png') }}" alt=""></div>
 									<div class="row">
 										<div class="col-sm-5">
 											<p>TotalGrades is an online gradebook for Primary and Secondary schools.</p>
@@ -41,13 +41,15 @@
 											<li><a href="{{url('/')}}">Home</a></li>
 											<li class="active"><a href="{{url('/features')}}">Features</a></li>
 											<li><a href="{{url('/contact')}}">Contact</a></li>
+											<li><a href="{{url('/contact')}}">Register</a></li>
+											<li><a href="{{url('/contact')}}">Tutorials</a></li>
 										</ul>
 									</nav>
 								</div>
 							</div>
 							<div class="col-sm-6 col-md-3 col-md-offset-1">
 								<div class="footer-content">
-									<h2>Latest Projects</h2>
+									<h2>Latest Tutorials</h2>
 									<div class="gallery row">
 										<div class="gallery-item col-xs-4">
 											<div class="overlay-container">

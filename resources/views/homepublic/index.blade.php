@@ -11,7 +11,7 @@
 						<div class="col-md-12">
 							<h1 class="text-center title">TotalGrades</h1>
 							<div class="separator"></div>
-							<p class="text-center">Simple, Smart, and Affordable.</p>
+							<p class="text-center">Free, Simple, and Smart</p>
 							<div class="row grid-space-20">
 								<div class="col-sm-12 col-md-4 col-md-push-4">
 									<img src="{{asset('assets-homepublic/images/report_card_totalgrades.png')}}" alt="" class="object-non-visible" data-animation-effect="fadeInUp" data-effect-delay="0">
@@ -43,8 +43,8 @@
 											<i class="fa fa-money"></i>
 										</div>
 										<div class="body">
-											<h2>Affordable</h2>
-											<p>Total Grades is affordable no matter how many students you have. </p>
+											<h2>Free</h2>
+											<p>Total Grades is free no matter how many students you have. </p>
 											
 										</div>
 									</div>
@@ -123,11 +123,11 @@
 						<div class="call-to-action">
 							<div class="row">
 								<div class="col-md-8">
-									<h1 class="title text-center">We offer more possibilities to meet your every need.</h1>
+									<h1 class="title text-center">Total Grades is free no matter how many students you have.</h1>
 								</div>
 								<div class="col-md-4">
 									<div class="text-center">
-										<a href="{{url('/contact')}}" class="btn btn-default btn-lg">CONTACT US</a>
+										<a href="{{url('/contact')}}" class="btn btn-default btn-lg">Register Now</a>
 									</div>
 								</div>
 							</div>
@@ -145,7 +145,7 @@
 				<div class="container">
 					<h1 class="text-center">Why Choose Total Grades</h1>
 					<div class="separator"></div>
-					<p class="lead text-center">Because Total Grades is an innovative and cost effective grades reporting solution developed by people with passion for improving the quality of primary and secondary eduction around the world.</p>
+					<p class="lead text-center">Because Total Grades is an innovative free grades reporting solution developed by people with passion for improving the quality of primary and secondary eduction around the world.</p>
 					<br>
 					<div class="row">
 						<div class="col-md-6">
